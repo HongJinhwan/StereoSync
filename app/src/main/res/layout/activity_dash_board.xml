@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cong_jh.stereosync.DashBoard"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/cover_back"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="모드 설정"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/listenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.53"
+        android:background="#dedcee"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_weight="0.86"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageViewa2"
+                android:layout_width="172dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.60"
+                android:paddingTop="30dp"
+                app:srcCompat="@drawable/ic_listen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_weight="0.22"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_listenToMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="LISTEN"
+                android:textColor="#52616a"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.50"
+        android:background="@android:color/holo_orange_light"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_weight="0.86"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="172dp"
+                android:layout_height="86dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.60"
+                android:paddingTop="30dp"
+                app:srcCompat="@drawable/ic_share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_weight="0.22"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shareMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="SHARE"
+                android:textColor="#ffffee"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
